@@ -1,0 +1,21 @@
+.slide-padding{padding:16px 16px 0 16px;}
+#slide-wrap{padding:20px 40px;background:#f1f1f1; position: relative;-moz-border-radius:5px;-webkit-border-radius:5px;}
+#slide-box{
+	position:absolute;
+}
+#slide-box p {font-size: 12px; line-height: 18px;color:#8C8C8C;}
+#slide-box h1 {color:#666; font-size: 20px; line-height: 120%;}
+
+.bg-img{
+	border:1px solid #DDDDDD;
+	background: #fff;
+	padding: 4px;
+	margin: 0 20px 0 0;
+}
+
+
+
+.button-left{width: 20px; height: 100%; position: absolute; top:0; left:0; background: url(../images/left-button.png) no-repeat 0 50%;opacity:0.4;filter:alpha(opacity=40);z-index: 1024;cursor:pointer; }
+.button-right{width: 20px; height: 100%; position: absolute; top:0; right:0; background: url(../images/right-button.png) no-repeat 100% 50%;opacity:0.4;filter:alpha(opacity=40);z-index: 1024;cursor:pointer; }
+.button-left:hover{opacity:1;filter:alpha(opacity=100); }
+.button-right:hover{opacity:1;filter:alpha(opacity=100);}
