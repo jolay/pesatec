@@ -1,0 +1,80 @@
+.center { text-align: center; }
+#container {
+	background: #fff;
+	margin: 100px auto 0 auto;
+	padding: 1em;
+	width: 400px;
+}
+
+#checkUpdate {
+font-size: 16px;
+color: #1B5D00;
+
+}
+
+
+#cpanel #checkUpdate span {
+
+text-align: left;
+
+} 
+
+#checkUpdate .updateyes {
+
+font-size: 16px;
+
+}
+
+#checkUpdate .updateyes a {
+font-size: 16px;
+color: #ff6600;
+}
+
+
+#checkUpdate .updateno {
+font-size: 16px;
+color: #1B5D00;
+}
+
+#currentVersion {
+font-size: 16px;
+color: #1B5D00;
+}
+
+div.reset {
+clear: both;
+}
+
+
+#orders table{
+padding: 1px;
+font-size:12px;
+}
+
+table.orderInfoTable {
+border-left:1px solid white
+}
+
+table.paymentTable {
+border-left:1px solid white
+}
+
+table.orders {
+background-color: #E6EFF3;
+width:940px;
+
+}
+
+table.cart_order {
+border: 1px solid #ccc;
+font-size:12px;
+width:66%;
+
+}
+
+table.cart_order thead#head{
+background: #383838;
+color: #fff;
+text-align: left;
+}
+

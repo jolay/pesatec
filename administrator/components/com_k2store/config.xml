@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <config>
+
+ <fieldset name="COM_K2STORE_BASIC_OPTIONS" label="K2STORE_BASIC_OPTIONS">
+ 
+
+	<field name="isregister" type="list" default="0" label="Allow only registered user to see the cart" description="Set yes to allow only registered users to see the cart">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</field>
+	
+	<field name="usesecure" type="radio" default="0" label="Encrypt Login Form" description="Submit encrypted login data (requires SSL)">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </field>
+</fieldset>
+
+<fieldset name="COM_K2STORE_CART_SETTINGS" label="K2STORE_CART_SETTINGS">
+    
+  	
+	<field name="show_addtocart" type="list" default="0" label="Disable add to cart button totally?" description="Set this to yes for totally disabling the cart">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</field>
+	
+	<field name="cartbutton" type="list" default="image" label="Add to cart button type" description="Set an image or a button for the cart">
+			<option value="image">Image</option>
+			<option value="button">Button</option>
+	</field>
+	
+	
+	<field name="show_thumb_cart" type="list" default="1" label="Show thumbnail images in the cart" description="Enable this to show thumb images">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</field>
+	
+	<field name="cartimage_size" type="list" default="_XS" label="Choose the size of thumbnail image (uploaded K2)" description="">
+			<option value="_XS">XSmall</option>
+			<option value="_S">Small</option>
+			<option value="_M">Medium</option>
+			<option value="_L">Large</option>
+			<option value="_XL">XLarge</option>			
+	</field>
+
+	
+	<field name="show_tax_total" type="list" default="1" label="Show Price with tax in cart, checkout and invoice?" description="Enable to show the tax total">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</field>
+	
+	
+	<field name="show_billing_address" type="list" default="1" label="Enable billing address fields" description="Set yes to enable billing address collection">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</field>
+	
+   <field name="allow_guest_checkout" type="radio" default="0" label="Allow Guest Checkout?" description="Set yes to show guest checkout">
+	<option value="0">NO</option>
+	<option value="1">YES</option>
+	</field>
+	
+	<field name="allow_attachment_downloads" type="radio" default="0" label="Send attachments upon order completion?" description="Set yes to allow sending attachments of the products in the emails">
+		<option value="0">NO</option>
+		<option value="1">YES</option>
+	</field>
+</fieldset>
+<fieldset name="COM_K2STORE_DISCOUNT_SETTINGS" label="K2STORE_DISCOUNT_SETTINGS">
+ 	
+    <field name="global_discount" type="text" size="20" default="" label="Set global discount(%)" description="Leave empty to disable this. If you set a percentage (without % symbol), discount on the total cart value (without shipping) will be applied" />
+   <field name="global_minordervalue" type="text" size="20" default="" label="Set global minimum order value for the cart" description="Leave empty to disable this. If you set value here, then order higher than this value alone will be allowed to proceed to checkout" />
+
+</fieldset>
+<fieldset name="COM_K2STORE_NUMERIC_SETTINGS" label="K2STORE_NUMERIC_SETTINGS">
+	
+  <field name="date_format" type="text" size="40" default="Y-m-d H:i:s" label="Date Format" description="Use the date format. Refer the PHP manual to know the available date formats" />
+	<field name="currency" type="text" size="40" default="$" label="Currency Symbol" description="Enter Currency Symbol (eg. $)" />
+	<field name="currency_position" type="list" size="2" default="pre" label="Currency Symbol Position" description="Where to position the currency symbol" >
+		<option value="pre">Front</option>
+		<option value="post">End</option>
+	</field>
+	
+	<field name="currency_code" type="text" size="40" default="USD" label="Currency Code" description="Enter Currency Code (eg. USD)" />
+	<field name="currency_num_decimals" type="text" size="40" default="2" label="Decimals" description="Enter Decimals" />
+	<field name="currency_decimal" type="text" size="40" default="." label="Decimal Separator" description="Enter Decimal Separator" />
+	<field name="currency_thousands" type="text" size="20" default="," label="Thousands Separator" description="Thousands Separator" />
+	
+</fieldset>
+<fieldset name="COM_K2STORE_SHOP_SETTINGS" label="K2STORE_SHOP_SETTINGS">
+
+	<field name="emails_defaultemail" type="text" size="40" default="yourfrom@email.com" label="Default From Email ID" description="Enter from email id" /> 		
+	<field name="emails_defaultname" type="text" size="40" default="Your From Name" label="Default Sender Name" description="Enter default sender name" /> 		
+	
+	<field name="admin_email" type="text" size="40" default="youradmin@email.com" label="Default Admin Email" description="Enter Admin email" /> 		
+	
+	
+	<field name="shopname" type="text" size="40" default="My Shop" label="Shop Name" description="Enter the name of the shop" /> 		
+	
+	<field name="signature" type="textarea" rows="5" cols="40" default="Administrator, My Shop" label="Signature" description="Enter the signature which will be used in the emails" /> 		
+
+</fieldset>
+<fieldset name="COM_K2STORE_MISC_SETTINGS" label="K2STORE_MISC_SETTINGS">
+
+	<field name="show_title" type="list" default="1" label="Show Item Title in Thank you page" description="">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	</field>
+	<field name="itemid" type="text" size="40" default="99" label="Menu Item Id" description="Set an item id if you are facing issues with the module assignment" />
+	<field name="termsid" type="text" size="20" default="" label="K2 Item Id of Terms and Conditions" description="Enter the K2 Item Id which holds the terms and conditions of your store" />
+	
+</fieldset>
+</config>
