@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system">
+	<name>System - GKreCaptcha</name>
+	<creationDate>23 January 2011</creationDate>
+	<author>GavickPro</author>
+	<authorEmail>support@gavick.com</authorEmail>
+	<authorUrl>http://gavick.com</authorUrl>
+	<copyright>Copyright (C) 2011 GavickPro. All rights reserved.</copyright>
+	<license></license>
+	<version>1.0</version>
+	<description>GavickPro reCaptcha plugin</description>
+	<files>
+		<filename plugin="gk_recaptcha">gk_recaptcha.php</filename>
+		<filename plugin="gk_recaptcha">index.html</filename>
+		<folder>recaptcha</folder>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB.plg_system_gk_recaptcha.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="public_key" type="text" description="PLG_GK_RECAPTCHA_PUBLIC_KEY_DESC" label="PLG_GK_RECAPTCHA_PUBLIC_KEY" size="50" />
+				<field name="private_key" type="text" description="PLG_GK_RECAPTCHA_PRIVATE_KEY_DESC" label="PLG_GK_RECAPTCHA_PRIVATE_KEY" size="50" />
+				
+				<field name="theme" type="list" default="red" description="PLG_GK_RECAPTCHA_THEME_DESC" label="PLG_GK_RECAPTCHA_THEME">
+					<option value="red">red</option>
+					<option value="white">white</option>
+					<option value="blackglass">blackglass</option>
+					<option value="clean">clean</option>
+				</field>
+				
+				<field name="lang" type="list" default="en" description="PLG_GK_RECAPTCHA_LANG_DESC" label="PLG_GK_RECAPTCHA_LANG">
+					<option value="en">PLG_GK_RECAPTCHA_LANG_ENGLISH</option>
+					<option value="nl">PLG_GK_RECAPTCHA_LANG_DUTCH</option>
+					<option value="fr">PLG_GK_RECAPTCHA_LANG_FRENCH</option>
+					<option value="de">PLG_GK_RECAPTCHA_LANG_GERMAN</option>
+					<option value="pt">PLG_GK_RECAPTCHA_LANG_PORTUGESE</option>
+					<option value="ru">PLG_GK_RECAPTCHA_LANG_RUSSIAN</option>
+					<option value="es">PLG_GK_RECAPTCHA_LANG_SPANISH</option>
+					<option value="tr">PLG_GK_RECAPTCHA_LANG_TURKISH</option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

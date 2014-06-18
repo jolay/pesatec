@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="plugin" group="k2" method="upgrade">
+  <name>K2 Plugin - K2 Store</name>
+  <author>RameshElamathi</author>
+  <creationDate>October 10, 2010</creationDate>
+  <copyright>Copyright (c) 2010 - 2015 Weblogicx India Private Ltd. All rights reserved.</copyright>
+  <authorEmail>info@weblogicxindia.com</authorEmail>
+  <authorUrl>www.weblogicxindia.com</authorUrl>
+  <version>2.4</version>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description><![CDATA[<h3>K2 Store</h3>
+      
+      The Plugin extends the K2 CCK with an <b>e-commerce feature.</b> The Features include:
+      
+      <ul>
+      <li>provides an ajax shopping cart </li>
+      <li>Paypal payment gateway integrated </li>
+      <li>uses the extra fields to get the price information</li>
+      <li>unobstrusive</li>
+      <li>convert k2 items into products</li>
+      </ul>
+      
+      Please contact to us for more info <a href="mailto:rameshelamathi@gmail.com">rameshelamathi@gmail.com</a>]]></description>
+	<files>
+		<filename plugin="k2store">k2store.php</filename>
+	</files>
+	<params group="item-content" addpath="/administrator/components/com_k2store/elements">
+		<param name="item_price" type="text" size="80" default="" label="Item Price" description="Enter the price of the item (without currency symbol)" />
+		<param name="item_tax" type="taxselect" size="0" default="" label="Item Tax" description="Select a tax profile" />
+		<param name="item_shipping" type="list" default="1" label="Enable shipping for this item?" description="Set yes to enable shipping">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>		
+		<param name="item_options" type="itemoptions" size="0" default="" label="Item Options (Click apply to fill this)" description="" />
+	</params>
+	
+	
+</install>

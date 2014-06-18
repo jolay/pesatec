@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - OpenPotion Asynchronous Google Analytics</name>
+	<author>OpenPotion</author>
+	<creationDate>2 October 2012</creationDate>
+	<copyright>Copyright (C) 2012 OpenPotion. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>jason@openpotion.com</authorEmail>
+	<authorUrl>www.openpotion.com</authorUrl>
+	<version>2.1</version>
+	<description>PLG_SYSTEM_OPENPOTIONGOOGLEANALYTICS_DESC</description>
+	<files>
+		<filename plugin="openpotiongoogleanalytics">openpotiongoogleanalytics.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_openpotiongoogleanalytics.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_openpotiongoogleanalytics.sys.ini</language>
+	</languages>
+	<params>
+		<param name="method" type="radio" default="0" label="Paste method" description="Select 'Web Property ID', if you want to paste Web Property ID, or 'Tracking Code', if you got it from Google Analytics.">
+			<option value="0">Web Property ID</option>
+			<option value="1">Tracking Code</option>
+		</param>
+		<param name="insertion" type="list" default="0" label="Insert the code into" description="Google recommends to insert the code into head section.">
+			<option value="0">head section (default)</option>
+			<option value="1">the end of body section</option>
+		</param>
+		
+		<param type="spacer" default="&lt;span id=&quot;web_id&quot;&gt;&lt;b&gt;Web Property ID&lt;/b&gt;&lt;/span&gt;"/>
+		<param name="web_property_id" type="text" default="" label="Web Property ID (Default)" description="This is the Web Property ID provided by Google. The format is: UA-XXXXXXX-X" />
+		<param name="domain_model" type="list" default="0" label="Domain Model" description="Select which Domain Model you are tracking. If you are unsure use the default.">
+			<option value="0">A Single Domain (Default)</option>
+			<option value="1">One domain with multiple subdomains</option>
+			<option value="2">Multiple top-level domains</option>
+		</param>
+		<param name="tracking_domain" type="text" default="" label="Tracking Domain " description="This is the root domain to be use in tracking. Not required for the default setting: A Single Domain." />
+		
+		<param type="spacer" default="&lt;span id=&quot;web_co&quot;&gt;&lt;b&gt;Tracking Code&lt;/b&gt;&lt;/span&gt;" />
+		<param name="web_code" type="textarea" default="" label="Tracking Code" description="Paste here the code you got from Google Analytics, if you don't want to paste Web Property ID." rows="5" cols="26" />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="method" type="radio" default="0" label="Paste method" description="Select 'Web Property ID', if you want to paste Web Property ID, or 'Tracking Code', if you got it from Google Analytics.">
+					<option value="0">Web Property ID (UA-XXXXXXX-X)</option>
+					<option value="1">Full Tracking Code (including script tags)</option>
+				</field>
+				<field name="insertion" type="list" default="0" label="Insert the code into" description="Google recommends to insert the code into head section.">
+					<option value="0">head section (default)</option>
+					<option value="1">the end of body section</option>
+				</field>
+
+				<field type="spacer" name="web_id" label="&lt;span id=&quot;web_id&quot;&gt;&lt;b&gt;Web Property ID&lt;/b&gt;&lt;/span&gt;"/>
+				<field name="web_property_id" type="text" default="" label="Web Property ID" description="This is the Web Property ID provided by Google. The format is: UA-XXXXXXX-X" />
+				<field name="domain_model" type="list" default="0" label="Domain Model" description="Select which Domain Model you are tracking. If you are unsure use the default.">
+					<option value="0">A Single Domain (Default)</option>
+					<option value="1">One domain with multiple subdomains</option>
+					<option value="2">Multiple top-level domains</option>
+				</field>
+				<field name="tracking_domain" type="text" default="" label="Tracking Domain " description="This is the root domain to be use in tracking. Not required for the default setting: A Single Domain." />
+
+				<field type="spacer" name="web_co" label="&lt;span id=&quot;web_co&quot;&gt;&lt;b&gt;Tracking Code&lt;/b&gt;&lt;/span&gt;" />
+				<field name="web_code" type="textarea" default="" label="Tracking Code" description="Paste here the code you got from Google Analytics, if you don't want to paste Web Property ID." rows="5" cols="26" filter="raw" />
+			</fieldset>
+		</fields>
+	</config>
+</install>

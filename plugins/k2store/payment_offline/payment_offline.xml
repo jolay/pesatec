@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="plugin" group="k2store" method="upgrade">
+	<name>Offline Payments</name>
+	<version>0.1.1</version>
+	<creationDate>Sep 2010</creationDate>
+	<author>Weblogicx India</author>
+	<authorEmail>info@weblogicxindia.com</authorEmail>
+	<authorUrl>http://www.weblogicxindia.in</authorUrl>
+	<copyright>2010 Weblogicx India Private Limited</copyright>
+	<license>GNU General Public License v2</license>
+	<description>This plugin enables offline payments</description>
+	
+	<files>
+		<filename plugin="payment_offline">payment_offline.php</filename>
+		<filename>index.html</filename>
+		<folder>payment_offline</folder>	
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_k2store_payment_offline.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+		<field name="enable_check" type="radio" default="1" label="Offline Accept Checks" description="Offline Accept Checks Desc">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		<field name="enable_moneyorder" type="radio" default="1" label="Offline Accept Money Orders" description="Offline Accept Money Orders Desc">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		<field name="enable_wire" type="radio" default="1" label="Offline Accept Wire" description="Offline Accept Wire Desc">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		<field name="enable_other" type="radio" default="1" label="Offline Accept Other" description="Offline Accept Other Desc">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		<field name="articleid" type="text" size="10" default="" label="Offline Article Number" description="Offline Article Number Desc"/>
+	</fieldset>
+</fields>	
+</config>			
+</install>
