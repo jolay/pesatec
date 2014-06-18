@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="plugin" group="user" method="upgrade">
+	<name>User - K2Store</name>
+	<author>Ramesh Elamathi</author>
+	<creationDate>May 2011</creationDate>
+	<copyright>(C) 2011-2016 Weblogicx India Private Limited</copyright>
+	<license>http://www.gnu.org/copyleft/lgpl.html GNU/LGPL</license>
+	<authorEmail>support@k2store.org</authorEmail>
+	<authorUrl>www.k2store.org</authorUrl>
+	<version>1.1.0</version>
+    <description>User plugin required for K2 Store.</description>
+	<files>
+		<filename plugin="k2store">k2store.php</filename>		
+	</files>
+
+</install>
