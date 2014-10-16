@@ -70,4 +70,4 @@ Copyright:
     * See Licenses details at http://docs.joomla.org/Joomla_Licenses
 
 Development:
-    * Servicios de Marketing Digital (http://www.neyra.mx/) Neyra Web
+    * [Servicios de Marketing Digital] (http://www.neyra.mx/) Neyra Web
