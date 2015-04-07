@@ -3,6 +3,7 @@
     * Joomla! Official site: http://www.joomla.org
     * Joomla 2.5 version history - http://docs.joomla.org/Joomla_2.5_version_history
     * Detailed changes in the Changelog: http://joomlacode.org/gf/project/joomla/scmsvn/?action=browse&path=/development/trunk/administrator/&view=log
+    * Maquetado HTML de Landing Page: [Rebeca Cors](http://www.sacional.com/marcas/rebeca-cors.html)
 
 2- What is Joomla?
     * Joomla it's a Content Management System (CMS) which enables you to build Web sites and powerful online applications.
